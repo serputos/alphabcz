@@ -1,5 +1,7 @@
 
 import { Fragment, useEffect, useRef, useState } from "react";
+import Image from "next/image"
+import logoBN from "../public/logoBN.png"
 
 
 
@@ -13,7 +15,7 @@ export default function Navbar() {
           {" "}
           <h1 className=" w-full flex flex-col items-center bg-black px-4 py-3 text-8xl  font-Teko text-white">
             {" "}
-            ALPHA BCZ
+            <Image src={logoBN} alt="logoBN" width="250px" height="163px"  />
           </h1>
         </span>{" "}
         
