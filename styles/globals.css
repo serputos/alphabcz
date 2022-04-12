@@ -18,3 +18,10 @@ a {
 * {
   box-sizing: border-box;
 }
+.navBar{  z-index: 1;}
+
+.landingImage{
+ 
+  background-image: url("/public/fotoA.png");
+
+}
