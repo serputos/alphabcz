@@ -8,12 +8,12 @@ import Link from "next/link";
 
 
 const Box = styled.div`
-/*   position: relative;   */
-position: relative;
-  z-index: 0;
+/*   position: relative;    */
+   position: absolute;  
+   z-index: -1;
    top: 0; 
  
-    padding-top:220px   
+     padding-top:220px    
 `;
 
 function getWindowDimensions() {
@@ -25,24 +25,11 @@ function getWindowDimensions() {
 }
 
 function BGImage() {
-    const [fotoPantalla, setFotoPantalla] = useState(0);
+  
   const [width, setWidth] = useState(null);
   const [height, setheight] = useState(null);
-  const fotos = [
-    "/fotoA.png",
-    "/fotoB.png",
-    "/fotoC.png",
-   
-  ];
-/*   const nextFoto = () => {
-    if (fotoPantalla === 2) {
-      setFotoPantalla(0);
-    } else {
-      setFotoPantalla(fotoPantalla + 1);
-    }
-    console.log(fotoPantalla)
-    
-  }; */
+ 
+
 
   useEffect(() => {
     const { width, height } = getWindowDimensions();
@@ -73,31 +60,49 @@ function BGImage() {
  
 
    <div className={styles.slides}>
-      <div name="slide-1" id="slide-1">
+      <div  name="slide-1" id="slide-1">
+     
+     
       <Image
-      
+       className=''
         src={"/fotoA.png"}
         width={width}
         height={height} 
         alt=""/>
+        
+        <Link href={"/alphabcz/gallery"}>
+        
+           <a  className='position: absolute font-Teko  '>SomeText</a>
+           
+      </Link>
+       
+      
       </div>
       <div name="slide-2" id="slide-2">
+
       <Image
   
         src={"/fotoB.png"}
         width={width}
         height={height} 
         alt=""/>
+          <Link href="/alphabcz/gallery" >
+           <a className='position: absolute font-Teko'>SomeText</a>
+      </Link>
       </div>
       <div id="slide-3"> <Image
      
         src={"/fotoC.png"}
         width={width}
         height={height } 
-        alt=""/></div>
+        alt=""/>
+          <Link href="/alphabcz/gallery" >
+           <a className='position: absolute font-Teko'>SomeText</a>
+      </Link>
+          </div>
     
     </div>
-   {/* <Link href="" scroll={false}>
+   {/* <Link href="" >
         <Image
         src={"/fotoA.png"}
         width={width}

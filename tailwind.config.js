@@ -4,6 +4,7 @@ module.exports = {
  
   media: "class", 
   theme: {
+    fontFamily: { Teko: ["Teko"] },
     
     extend: {
       backgroundImage: {

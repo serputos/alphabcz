@@ -10,18 +10,9 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
 
 * {
   box-sizing: border-box;
 }
 .navBar{  z-index: 1;}
 
-.landingImage{
- 
-  background-image: url("/public/fotoA.png");
-
-}

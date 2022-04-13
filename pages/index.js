@@ -15,8 +15,8 @@ const Wrapper = styled.div`
   z-index: 1;
   width: 100%;
   height: 100%;
-  /* position: fixed; */
-  position: absolute;
+ 
+   position: absolute; 
  
   
  
@@ -42,46 +42,10 @@ export default function Home() {
       <BgImage/> 
       </>
 
-     {/*   <div className="w-full h-full bg-black"> 
 
-</div> */}
-     {/*  <div  > 
-       <Image
-           
-           layout="fill"
-           objectFit='cover'
-           objectPosition="center"
-           className="object-center object-cover pointer-events-none"
-
-           alt=""
-           src="/fotoA.png"
-         
-         ></Image>  
-
-      </div>  */}
-      
-
-      {/* {fotosFondo.map((foto, i) => (
-          <Image
-            key={i}
-            layout="fill"
-            objectFit='cover'
-            objectPosition="center"
-        
-
-            alt="dsa"
-            src="/public/fotpA.png"
-          
-          ></Image>
-        ))} */}
        
           </div>
-     /*  <Link href ="/alphabcz">
-      <h2 >INDEEEEEX</h2>
 
-      </Link>
-      
-  */
  
   
   )

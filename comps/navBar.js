@@ -3,6 +3,7 @@ import { Fragment, useEffect, useRef, useState } from "react";
 import Image from "next/image"
 import logoBN from "../public/logoBN.png"
 import styles from '../styles/Home.module.css'
+import Link from "next/link";
 
 
 
@@ -38,15 +39,22 @@ export default function Navbar() {
           {isHover && (
             <div>
               {" "}
+              <Link href={"/alphabcz/gallery"} passHref>
               <button className=" w-full px-4 py-2 text-2xl  font-Teko text-white bg-black hover:bg-opacity-60 hover:border-2 border-white  cursor-pointer transition ease-in-out delay-100  hover:-translate-y-1 hover:scale-110 hover:duration-200 ">
                 GALLERY
               </button>
+              </Link>
+              
+              <Link href={"/alphabcz/gallery"} passHref>
               <button className=" w-full px-4 py-2 text-2xl  font-Teko text-white bg-black hover:bg-opacity-60 hover:border-2 border-white  cursor-pointer transition ease-in-out delay-100  hover:-translate-y-1 hover:scale-110 hover:duration-200 ">
-                PROJECTS
+                GALLERY
               </button>
+              </Link>
+              <Link href={"/alphabcz/gallery"} passHref>
               <button className=" w-full px-4 py-2 text-2xl  font-Teko text-white bg-black hover:bg-opacity-60 hover:border-2 border-white  cursor-pointer transition ease-in-out delay-100  hover:-translate-y-1 hover:scale-110 hover:duration-200 ">
-                PHOTOGRAPHY
+                GALLERY
               </button>
+              </Link>
             </div>
           )}
         
